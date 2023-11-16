@@ -25,4 +25,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    Route::view('/videos', 'video')->name('videos');
+    Route::view('/groups', 'group')->name('groups');
 });
